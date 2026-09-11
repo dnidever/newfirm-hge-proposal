@@ -1,0 +1,92 @@
+%
+% [ NOIRLab Proposal Attachment Template ]
+%
+%
+% This template can be used to help create the PDF attachment portion of a NOIRLab proposal.
+%  
+% Fill in the required information and add your figures. Once attachment is complete simply
+% download the PDF and attach it to your proposal via the proposal form at:
+% 
+% https://time-allocation.noirlab.edu/
+%
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{observing-proposal}
+\usepackage{xcolor}
+\usepackage{epsfig}
+
+% ---  additional packages can be imported as needed
+
+\begin{document}
+
+
+
+% [ SCIENTIFIC JUSTIFICATION ]
+%
+% Give the scientific justification for the proposed observations.
+% This section should consist of paragraphs of text followed by any
+% references and up to three figures and captions.  Be sure to include
+% overall significance to astronomy.  Please see the call for proposals
+% to determine specific criteria for each section. Unless otherwise noted criteria
+% is as follows: THE SCIENTIFIC JUSTIFICATION SHOULD BE LIMITED TO ONE PAGE
+% (the review panels have requested that we not send them more than one
+% page), with up to two additional pages for references, figures (no more
+% than three), and captions. 
+
+% If you wish to use our "reference" environment, follow the following
+% example (journal commands are compatible with AASTeX v4.0):
+%
+%\begin{references}
+%\reference Armandroff \& Massey 1991 \aj, 102, 927.
+%\reference Berkhuijsen \& Humphreys 1989 \aap, 214, 68.
+%\reference Massey 1993 in Massive Stars: Their Lives in the
+% Interstellar Medium (Review), ed. J. P. Cassinelli and E. B.
+% Churchwell, p. 168.
+%\reference Massey \& Armandroff 1999, in prep.
+%\end{references}
+
+% Figures:
+%
+% You can now use any file type for your figures. See examples below on how to include a pdf figure.
+%
+% \begin{figure}
+% \epsscale{0.85}
+% \plotone{sample.figure}
+% \caption{Sample figure showing important results.}
+% \end{figure}
+%
+\sciencejustification
+
+---  Enter your scientific justification
+
+\begin{figure}[!ht]
+\plotone{example-figure.pdf}
+\vspace{-3cm}
+\caption{This is an example of embedded PDF figure}
+\end{figure}
+
+
+% \begin{references}
+% \reference Example 2016, MM, 123, 7
+% \end{references}
+
+\clearpage
+
+
+
+% [ EXPERIMENTAL DESIGN ]
+%
+% This section should consist of text only (no figures).
+% There is a limit of one page of printed text.
+
+% Describe your overall observational program.  How will these
+% observations contribute toward the accomplishment of the goals
+% outlined in the science justification?  If you've requested
+% long-term status, justify why this is necessary for successful
+% completion of the science.
+%
+\expdesign
+---  Enter your experimental design information
+
+
+\end{document}
