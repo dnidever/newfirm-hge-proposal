@@ -1,92 +1,162 @@
 %
-% [ NOIRLab Proposal Attachment Template ]
-%
-%
-% This template can be used to help create the PDF attachment portion of a NOIRLab proposal.
-%  
-% Fill in the required information and add your figures. Once attachment is complete simply
-% download the PDF and attach it to your proposal via the proposal form at:
-% 
-% https://time-allocation.noirlab.edu/
+% NOIRLab Standard Proposal Attachment
+% Draft for Blanco/NEWFIRM HGE target-selection survey
 %
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{observing-proposal}
 \usepackage{xcolor}
 \usepackage{epsfig}
+\usepackage{graphicx}
 
-% ---  additional packages can be imported as needed
+% Red text marks quantitative inputs that must be finalized before submission.
+\newcommand{\need}[1]{\textcolor{red}{[NEED: #1]}}
 
 \begin{document}
 
-
-
-% [ SCIENTIFIC JUSTIFICATION ]
-%
-% Give the scientific justification for the proposed observations.
-% This section should consist of paragraphs of text followed by any
-% references and up to three figures and captions.  Be sure to include
-% overall significance to astronomy.  Please see the call for proposals
-% to determine specific criteria for each section. Unless otherwise noted criteria
-% is as follows: THE SCIENTIFIC JUSTIFICATION SHOULD BE LIMITED TO ONE PAGE
-% (the review panels have requested that we not send them more than one
-% page), with up to two additional pages for references, figures (no more
-% than three), and captions. 
-
-% If you wish to use our "reference" environment, follow the following
-% example (journal commands are compatible with AASTeX v4.0):
-%
-%\begin{references}
-%\reference Armandroff \& Massey 1991 \aj, 102, 927.
-%\reference Berkhuijsen \& Humphreys 1989 \aap, 214, 68.
-%\reference Massey 1993 in Massive Stars: Their Lives in the
-% Interstellar Medium (Review), ed. J. P. Cassinelli and E. B.
-% Churchwell, p. 168.
-%\reference Massey \& Armandroff 1999, in prep.
-%\end{references}
-
-% Figures:
-%
-% You can now use any file type for your figures. See examples below on how to include a pdf figure.
-%
-% \begin{figure}
-% \epsscale{0.85}
-% \plotone{sample.figure}
-% \caption{Sample figure showing important results.}
-% \end{figure}
-%
 \sciencejustification
 
----  Enter your scientific justification
+\noindent\textbf{The hidden metal-poor Milky Way.---}
+The oldest stars preserve a fossil record of the Milky Way's formation, but our
+view of that record is strongly biased against the inner disk, bar, and bulge.
+Extinction and crowding make these regions inaccessible to most optical
+metal-poor-star searches, while conventional near-infrared broad-band colors
+cannot cleanly separate metallicity from effective temperature and reddening.
+Consequently, metal-poor stars at low Galactic latitude remain among the least
+completely mapped components of the Galaxy. Finding these stars is essential
+for determining whether the inner Galaxy contains the centrally concentrated
+remnant of the proto-Milky Way, debris from its earliest accretion events, or a
+metal-weak extension of the disk. Their spatial distribution, kinematics, and
+chemical-abundance patterns directly test models for the assembly of the disk
+and bulge.
+
+\smallskip
+\noindent\textbf{A photometric solution in the near infrared.---}
+We propose an intermediate-band imaging survey of the Milky Way midplane with
+NEWFIRM on the Blanco 4-m telescope. The NEWFIRM \need{final filter list:
+J2/J3/H1/H2 or J1/J2/J3/H1/H2} filters sample cool giants across the $J$ and
+$H$ windows. Synthetic photometry from stellar isochrones demonstrates that
+the $H1-H2$ color is sensitive to metallicity along the red-giant branch while
+complementary colors constrain temperature and reddening (Figure~1). The
+observations will test and calibrate a selection designed to identify stars
+with $[\mathrm{Fe/H}]<-1$ where optical metallicity surveys are ineffective.
+At the required precision of \need{$\sigma(H1-H2)$}, our models predict
+\need{completeness} completeness and \need{purity} purity over
+\need{temperature/color and extinction range}.
+
+\smallskip
+\noindent\textbf{Enabling the Hidden Galaxy Explorer.---}
+After-SDSS-V's Hidden Galaxy Explorer (HGE) is being developed to map the
+dust-obscured far side of the Milky Way with deep near-infrared spectroscopy of
+faint luminous giants. HGE can deliver precise velocities and detailed
+abundances for these stars, but its return depends on an efficient and
+well-characterized input catalog. Existing 2MASS, VIRAC2, and APOGLIMPSE
+photometry can identify luminous red giants and estimate extinction; it cannot
+efficiently isolate the rare metal-poor population. NEWFIRM supplies the
+missing metallicity information. Combining the proposed photometry with these
+catalogs will yield \need{number} high-priority candidates to HGE's faint limit
+of \need{$H$-band limit} across \need{survey area and longitude range}. Stars
+in fields overlapping APOGEE will provide an immediate spectroscopic training
+and validation sample.
+
+\smallskip
+\noindent\textbf{Goals and legacy value.---}
+The program has three measurable goals: (1) demonstrate and calibrate
+intermediate-band selection of $[\mathrm{Fe/H}]<-1$ RGB stars in crowded,
+extinguished midplane fields; (2) deliver a catalog with a quantified selection
+function for HGE targeting; and (3) determine the surface density of metal-poor
+giants as a function of Galactic position. The images and catalogs will also
+provide a deep, uniform near-infrared data set for stellar populations and
+Galactic structure in a region poorly served by existing surveys.
+
+% Two additional pages may contain references, figures (maximum three), captions.
+\clearpage
 
 \begin{figure}[!ht]
-\plotone{example-figure.pdf}
-\vspace{-3cm}
-\caption{This is an example of embedded PDF figure}
+\centering
+\fbox{\parbox[c][2.35in][c]{0.92\textwidth}{\centering
+PLACEHOLDER---NEWFIRM color--magnitude or color--color diagram from synthetic
+photometry, highlighting metal-poor and metal-rich RGB sequences.}}
+\caption{\textbf{Metallicity sensitivity of the NEWFIRM intermediate bands.}
+\need{Models, ages, metallicities, extinction vector, and predicted color
+separation at the HGE magnitude range.}}
 \end{figure}
 
-
-% \begin{references}
-% \reference Example 2016, MM, 123, 7
-% \end{references}
+\begin{figure}[!ht]
+\centering
+\fbox{\parbox[c][2.35in][c]{0.92\textwidth}{\centering
+PLACEHOLDER---Galactic $(l,b)$ footprint showing proposed NEWFIRM fields,
+extinction/source density, the HGE test field at $(l,b)=(340^\circ,+1^\circ)$,
+and available APOGEE validation stars.}}
+\caption{\textbf{Proposed survey footprint.} \need{Area, longitude/latitude
+limits, number of NEWFIRM pointings, and rationale for field selection.}}
+\end{figure}
 
 \clearpage
 
+\begin{figure}[!ht]
+\centering
+\fbox{\parbox[c][3.0in][c]{0.92\textwidth}{\centering
+PLACEHOLDER---Recovery performance from synthetic or APOGEE-anchored tests:
+selection completeness and purity versus magnitude, extinction, or uncertainty.}}
+\caption{\textbf{Expected metal-poor target-selection performance.}
+\need{Selection boundary and validation data; completeness, purity, and counts.}}
+\end{figure}
 
+\begin{references}
+\reference APOGEE/HGE reference \need{citation}.
+\reference NEWFIRM intermediate-band/NMBS filter reference \need{citation}.
+\reference Inner-Galaxy metal-poor-star motivation \need{citations}.
+\end{references}
 
-% [ EXPERIMENTAL DESIGN ]
-%
-% This section should consist of text only (no figures).
-% There is a limit of one page of printed text.
+\clearpage
 
-% Describe your overall observational program.  How will these
-% observations contribute toward the accomplishment of the goals
-% outlined in the science justification?  If you've requested
-% long-term status, justify why this is necessary for successful
-% completion of the science.
-%
 \expdesign
----  Enter your experimental design information
 
+\noindent\textbf{Survey design.---}
+We request \need{number of nights; dark/gray/bright} with Blanco/NEWFIRM to
+image \need{area} of the southern Galactic midplane in \need{filter list}. The
+footprint comprises \need{number} NEWFIRM tiles spanning \need{$l,b$ limits}.
+It is chosen to \need{state optimization: inner-disk/bar sightlines, HGE fields,
+APOGEE validation, and/or extinction range}. Each tile will use a
+\need{number/geometry}-position dither that fills detector gaps, rejects bad
+pixels and cosmic rays, and supports a spatially and temporally local sky frame.
+Small offsets and \need{larger sky offsets, if required in crowded fields} will
+be interleaved to control the variable near-infrared background.
+
+\smallskip
+\noindent\textbf{Depth and exposure times.---}
+Our quantitative requirement is $\sigma(H1-H2)<\need{value}$ at
+$H=\need{HGE target limit}$, corresponding to signal-to-noise
+$>\need{value}$ in each intermediate band. The NEWFIRM exposure-time
+calculator gives individual exposures of \need{DIT and coadds} and total
+integrations of \need{per-filter times} per tile under \need{image quality, sky
+brightness, airmass, and water-vapor assumptions}. Individual integrations
+will avoid saturation and background nonlinearity while providing efficient
+sky sampling. Including \need{readout, dithering, filter changes, acquisition,
+and calibration overhead fraction}, each tile requires \need{elapsed time}; the
+full program requires \need{total hours/nights}.
+
+\smallskip
+\noindent\textbf{Conditions and scheduling.---}
+We require \need{requested image quality} image quality to limit blending in
+the dense midplane and photometric conditions for stable colors. The program
+can otherwise be executed in \need{lunar phase} time and has no cadence or
+time-critical constraints. The fields are observable during \need{date/LST
+range}; distributing them across the semester does not compromise the science.
+
+\smallskip
+\noindent\textbf{Reduction, calibration, and validation.---}
+Processing will remove detector signatures, construct sky frames from the
+dithers, correct astrometry, and produce stacked images and PSF photometry for
+crowded fields. Astrometry and broad-band zeropoints will be tied to
+\need{2MASS/VIRAC2}; intermediate-band zeropoints and spatial color terms will
+be determined from repeat observations and stellar-locus constraints
+\need{plus standards, if applicable}. Cross-matching to 2MASS, VIRAC2,
+APOGLIMPSE, Gaia, and APOGEE will provide extinction estimates, giant selection,
+and spectroscopic validation. Artificial-star tests will quantify completeness.
+The products will be calibrated images, a merged multi-band catalog, and an
+HGE-ready target list with selection probabilities as functions of magnitude,
+color, crowding, and position.
 
 \end{document}
