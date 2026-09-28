@@ -12,9 +12,14 @@
 % Red text marks quantitative inputs that must be finalized before submission.
 \newcommand{\need}[1]{\textcolor{red}{[NEED: #1]}}
 
+\newcommand{\dgr}{$^{\circ}~$}
+%\newcommand{\deg}{$^{\circ}$}
+
 \begin{document}
 
 \sciencejustification
+
+{\bf Unveiling the Fossilized relics of the early Milky Way with NEWFIRM}
 
 \noindent\textbf{The hidden metal-poor Milky Way.---}
 The oldest stars preserve a fossil record of the Milky Way's formation, but our
@@ -33,29 +38,27 @@ and bulge.
 \smallskip
 \noindent\textbf{A photometric solution in the near infrared.---}
 We propose an intermediate-band imaging survey of the Milky Way midplane with
-NEWFIRM on the Blanco 4-m telescope. The NEWFIRM \need{final filter list:
-J2/J3/H1/H2 or J1/J2/J3/H1/H2} filters sample cool giants across the $J$ and
-$H$ windows. Synthetic photometry from stellar isochrones demonstrates that
+NEWFIRM on the Blanco 4-m telescope. The NEWFIRM $H1/H2$ filters sample cool giants across the $J$ and $H$ windows. Synthetic photometry from stellar isochrones demonstrates that
 the $H1-H2$ color is sensitive to metallicity along the red-giant branch while
 complementary colors constrain temperature and reddening (Figure~1). The
 observations will test and calibrate a selection designed to identify stars
 with $[\mathrm{Fe/H}]<-1$ where optical metallicity surveys are ineffective.
-At the required precision of \need{$\sigma(H1-H2)$}, our models predict
+At the required precision of $\sigma(H1-H2)$=0.01 mag, our models predict
 \need{completeness} completeness and \need{purity} purity over
 \need{temperature/color and extinction range}.
 
 \smallskip
 \noindent\textbf{Enabling the Hidden Galaxy Explorer.---}
-After-SDSS-V's Hidden Galaxy Explorer (HGE) is being developed to map the
+After-SDSS-V's (AS-5) Hidden Galaxy Explorer (HGE) is being developed to map the
 dust-obscured far side of the Milky Way with deep near-infrared spectroscopy of
 faint luminous giants. HGE can deliver precise velocities and detailed
 abundances for these stars, but its return depends on an efficient and
-well-characterized input catalog. Existing 2MASS, VIRAC2, and APOGLIMPSE
-photometry can identify luminous red giants and estimate extinction; it cannot
+well-characterized input catalog. Existing 2MASS, VIRAC2, UKIDSS-GPS and GLIMPSE
+photometry can identify luminous red giants and estimate extinction via RJCE (Majewski et al.\ 2011); it cannot
 efficiently isolate the rare metal-poor population. NEWFIRM supplies the
 missing metallicity information. Combining the proposed photometry with these
 catalogs will yield \need{number} high-priority candidates to HGE's faint limit
-of \need{$H$-band limit} across \need{survey area and longitude range}. Stars
+of $H$=15.5 across \need{survey area and longitude range}. Stars
 in fields overlapping APOGEE will provide an immediate spectroscopic training
 and validation sample.
 
@@ -64,7 +67,7 @@ and validation sample.
 The program has three measurable goals: (1) demonstrate and calibrate
 intermediate-band selection of $[\mathrm{Fe/H}]<-1$ RGB stars in crowded,
 extinguished midplane fields; (2) deliver a catalog with a quantified selection
-function for HGE targeting; and (3) determine the surface density of metal-poor
+function for HGE Year 1 targeting; and (3) determine the surface density of metal-poor
 giants as a function of Galactic position. The images and catalogs will also
 provide a deep, uniform near-infrared data set for stellar populations and
 Galactic structure in a region poorly served by existing surveys.
@@ -106,11 +109,13 @@ The metallicity sensitivity of $H1-H2$ separates the metal-poor RGB from the met
 \centering
 \includegraphics[width=\linewidth]{hge_fields_2mass_starcounts.png}
 {\centering
-Galactic $(l,b)$ HGE footprint (red circles) over the 2MASS starcounts map and showing the proposed NEWFIRM observing region in blue,
-extinction/source density, the HGE test field at $(l,b)=(340^\circ,+1^\circ)$,
-and available APOGEE validation stars.}
-\caption{\textbf{Proposed survey footprint.} \need{Area, longitude/latitude
-limits, number of NEWFIRM pointings, and rationale for field selection.}}
+Galactic $(l,b)$ HGE footprint (red circles) over the 2MASS starcounts map and showing the proposed NEWFIRM observing region in blue, the HGE test field at $(l,b)=(340^\circ,+1^\circ)$
+(green circle).}
+\caption{\textbf{Proposed survey footprint.} 
+The proposal 60 square degree NEWFIRM observing region is shown by the blue rectangle, $20<l<40$\dgr and $-1.5<b<1.5$\deg.
+%\need{Area, longitude/latitude
+%limits, number of NEWFIRM pointings, and rationale for field selection.}
+}
 \end{figure}
 
 \clearpage
@@ -125,6 +130,7 @@ selection completeness and purity versus magnitude, extinction, or uncertainty.}
 \end{figure}
 
 \begin{references}
+\reference Majewski, S.R. et al. 2011, ApJ, 739, 1, 25
 \reference APOGEE/HGE reference \need{citation}.
 \reference NEWFIRM intermediate-band/NMBS filter reference \need{citation}.
 \reference Inner-Galaxy metal-poor-star motivation \need{citations}.
