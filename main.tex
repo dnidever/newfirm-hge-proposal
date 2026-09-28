@@ -8,6 +8,7 @@
 \usepackage{xcolor}
 \usepackage{epsfig}
 \usepackage{graphicx}
+\usepackage{url}
 
 % Red text marks quantitative inputs that must be finalized before submission.
 \newcommand{\need}[1]{\textcolor{red}{[NEED: #1]}}
@@ -25,52 +26,74 @@
 The oldest stars preserve a fossil record of the Milky Way's formation, but our
 view of that record is strongly biased against the inner disk, bar, and bulge.
 Extinction and crowding make these regions inaccessible to most optical
-metal-poor-star searches, while conventional near-infrared broad-band colors
+metal-poor-star searches (e.g., Pristine, PIGS, MAGIC), while conventional near-infrared
+broad-band colors
 cannot cleanly separate metallicity from effective temperature and reddening.
 Consequently, metal-poor stars at low Galactic latitude remain among the least
 completely mapped components of the Galaxy. Finding these stars is essential
 for determining whether the inner Galaxy contains the centrally concentrated
 remnant of the proto-Milky Way, debris from its earliest accretion events, or a
-metal-weak extension of the disk. Their spatial distribution, kinematics, and
-chemical-abundance patterns directly test models for the assembly of the disk
-and bulge.
+metal-weak extension of the disk.
+%Their spatial distribution, kinematics, and
+%chemical-abundance patterns directly test models for the assembly of the disk
+%and bulge.
+Their distribution and chemical-abundance patterns can distinguish stars
+formed in the massive building blocks of the proto-Milky Way from early
+accretion debris and a metal-weak extension of the disk, directly testing
+models for the formation of the inner Galaxy (Rix et al.\ 2022).
 
 \smallskip
 \noindent\textbf{A photometric solution in the near infrared.---}
-We propose an intermediate-band imaging survey of the Milky Way midplane with
-NEWFIRM on the Blanco 4-m telescope. The NEWFIRM $H1/H2$ filters sample cool giants across the $J$ and $H$ windows. Synthetic photometry from stellar isochrones demonstrates that
-the $H1-H2$ color is sensitive to metallicity along the red-giant branch while
-complementary colors constrain temperature and reddening (Figure~1). The
-observations will test and calibrate a selection designed to identify stars
-with $[\mathrm{Fe/H}]<-1$ where optical metallicity surveys are ineffective.
-At the required precision of $\sigma(H1-H2)$=0.01 mag, our models predict
-\need{completeness} completeness and \need{purity} purity over
-\need{temperature/color and extinction range}.
+We propose a 60~deg$^2$ NEWFIRM pathfinder survey sampling representative variations in extinction, crowding, and stellar density across the inner Galactic midplane. 
+Metallicity-sensitive CaHK photometry has efficiently identified metal-poor stars in relatively low-extinction, off-plane bulge fields (Arentsen et al.\ 2020), but cannot reach the dust-obscured inner-disk midplane targeted by HGE.
+NEWFIRM's $H1$ and $H2$ filters offer a near-infrared alternative: synthetic photometry predicts that $H1-H2$, combined with existing broad-band $J-K_s$, can distinguish upper-RGB stars with $[\mathrm{Fe/H}]<-1$ from the much more numerous metal-rich red-clump population (Figure~1). Our expected precision of $\sigma(H1-H2)\simeq0.011$~mag at $H=15.5$ will test this selection at the HGE magnitude limit.
+%Existing APOGEE spectroscopy will anchor the bright color--metallicity relation, while subsequent HGE spectra will validate the faint selection.
+%The survey will deliver an immediate HGE target catalog and establish the strategy for extending NEWFIRM imaging across the broader HGE footprint.
+Existing APOGEE spectroscopy will anchor the bright color--metallicity relation, while subsequent HGE spectra will validate the faint selection. The survey will thereby deliver an immediate HGE target catalog while measuring the performance of the proposed selection across representative variations in extinction and crowding.
+
+%We propose a 60~deg$^2$ pathfinder survey of the inner Galactic midplane with NEWFIRM on the Blanco 4-m telescope. The survey region samples representative variations in extinction, crowding, and stellar density while delivering an immediately useful HGE target catalog. The NEWFIRM $H1$ and $H2$ intermediate-band filters (van Dokkum et al., 2009) sample different portions of the $H$-band spectral energy distribution. Synthetic photometry predicts that $H1-H2$ is sensitive to metallicity along the upper red-giant branch, while existing broad-band $J-K_s$ photometry constrains temperature and reddening. Together, these colors can distinguish stars with $[\mathrm{Fe/H}]<-1$ from the much more numerous metal-rich red-clump population (Figure~1). Our expected precision of $\sigma(H1-H2)\simeq0.011$~mag at $H=15.5$ will test this predicted separation at the HGE magnitude limit. Existing APOGEE spectroscopy will anchor the bright color--metallicity relation, and repeat observations will quantify the photometric uncertainties. Subsequent HGE spectra will directly validate and refine the faint selection. These results will establish the selection performance and observing strategy needed to extend NEWFIRM imaging across the broader HGE footprint.
+
+%We propose a 60~deg$^2$ pathfinder survey of the inner Galactic midplane with NEWFIRM on the Blanco 4-m telescope. This region provides a representative test of intermediate-band metal-poor-star selection across the extinction, crowding, and source-density variations that HGE will encounter. It will deliver an immediately useful target catalog while establishing the selection performance and observing strategy required for a future expansion across the broader HGE footprint.
+%The NEWFIRM $H1$ and $H2$ intermediate-band filters sample different portions of the $H$-band spectral energy distribution. Synthetic photometry predicts that $H1-H2$ is sensitive to metallicity along the upper red-giant branch, while existing broad-band $J-K_s$ photometry primarily constrains temperature and reddening.
+%Synthetic photometry from stellar isochrones demonstrates that
+%the $H1-H2$ color is sensitive to metallicity along the red-giant branch while
+%complementary colors constrain temperature and reddening (Figure~1). The
+%observations will test and calibrate a selection designed to identify stars
+%with $[\mathrm{Fe/H}]<-1$ where optical metallicity surveys are ineffective.
+%At our expected precision of $\sigma(H1-H2)\simeq0.011$~mag at $H=15.5$, the observations will test the metallicity-dependent displacement predicted by the isochrones in Figure~1. Existing APOGEE spectroscopy in the survey footprint will anchor the $H1-H2$ metallicity relation and provide an initial bright validation sample. Photometric uncertainties measured from repeated and overlapping observations will be used to predict the performance of the selection at the HGE magnitude limit, while subsequent HGE spectra will directly validate and refine the faint target selection.
 
 \smallskip
 \noindent\textbf{Enabling the Hidden Galaxy Explorer.---}
-After-SDSS-V's (AS-5) Hidden Galaxy Explorer (HGE) is being developed to map the
-dust-obscured far side of the Milky Way with deep near-infrared spectroscopy of
-faint luminous giants. HGE can deliver precise velocities and detailed
-abundances for these stars, but its return depends on an efficient and
-well-characterized input catalog. Existing 2MASS, VIRAC2, UKIDSS-GPS and GLIMPSE
-photometry can identify luminous red giants and estimate extinction via RJCE (Majewski et al.\ 2011); it cannot
-efficiently isolate the rare metal-poor population. NEWFIRM supplies the
-missing metallicity information. Combining the proposed photometry with these
-catalogs will yield \need{number} high-priority candidates to HGE's faint limit
-of $H$=15.5 across \need{survey area and longitude range}. Stars
-in fields overlapping APOGEE will provide an immediate spectroscopic training
-and validation sample.
+After-SDSS-V's Hidden Galaxy Explorer (HGE; SDSS Collaboration 2026) is scheduled to begin observations in mid-2027, mapping the dust-obscured far side of the Milky Way through deep near-infrared spectroscopy of faint luminous giants. HGE will deliver precise velocities and detailed abundances, but its scientific return depends on an efficient, well-characterized input catalog. Existing 2MASS, VIRAC2, UKIDSS-GPS, and GLIMPSE photometry can identify luminous red giants and estimate extinction through RJCE (Majewski et al.\ 2011), but cannot efficiently isolate the rare metal-poor population.
+%Without metallicity preselection, a large fraction of HGE fibers and long integrations would be spent on metal-rich foreground stars.
+%NEWFIRM supplies the missing metallicity information. Combining the proposed $H1/H2$ imaging with existing catalogs will provide a ranked list of metal-poor candidates to HGE's faint limit of $H=15.5$ across $20^\circ<l<40^\circ$ and $|b|<1.5^\circ$.
+%
+%After-SDSS-V's Hidden Galaxy Explorer (HGE; SDSS Collaboration 2026) is scheduled to begin observations in mid-2027, mapping the dust-obscured far side of the Milky Way through deep near-infrared spectroscopy of faint luminous giants. The proposed pathfinder will provide metal-poor targets during HGE's early operations and establish the strategy for expanding NEWFIRM imaging over a larger fraction of the HGE footprint.
+%
+%After-SDSS-V's Hidden Galaxy Explorer (HGE; SDSS Collaboration 2026)
+%is being developed to map the dust-obscured far side of the Milky Way
+%through deep near-infrared spectroscopy of faint luminous giants.
+%GE can deliver precise velocities and detailed
+%abundances for these stars, but its return depends on an efficient and
+%well-characterized input catalog. Existing 2MASS, VIRAC2, UKIDSS-GPS and GLIMPSE
+%photometry can identify luminous red giants and estimate extinction via RJCE (Majewski et al.\ 2011); it cannot
+%efficiently isolate the rare metal-poor population.
+NEWFIRM supplies the missing metallicity information. 
+Combining the proposed $H1/H2$ imaging with existing catalogs will provide a ranked list of metal-poor candidates to HGE's faint limit of $H=15.5$ across $20^\circ<l<40^\circ$ and $|b|<1.5^\circ$ for use during early HGE operations, while establishing the basis for expanding NEWFIRM imaging across the broader HGE footprint.
+%HGE's faint limit of $H=15.5$ across $20^\circ<l<40^\circ$ and $|b|<1.5^\circ$.
+Existing APOGEE spectroscopy in the footprint will anchor the color--metallicity relation at the bright end, while subsequent HGE spectroscopy will validate and refine the selection at fainter magnitudes.
+%Combining the proposed photometry with these
+%catalogs will yield \need{number} high-priority candidates to HGE's faint limit
+%of $H$=15.5 across 60 square degrees. Stars
+%in fields overlapping APOGEE will provide an immediate spectroscopic training
+%and validation sample.
 
 \smallskip
 \noindent\textbf{Goals and legacy value.---}
-The program has three measurable goals: (1) demonstrate and calibrate
-intermediate-band selection of $[\mathrm{Fe/H}]<-1$ RGB stars in crowded,
-extinguished midplane fields; (2) deliver a catalog with a quantified selection
-function for HGE Year 1 targeting; and (3) determine the surface density of metal-poor
-giants as a function of Galactic position. The images and catalogs will also
-provide a deep, uniform near-infrared data set for stellar populations and
-Galactic structure in a region poorly served by existing surveys.
+The program has three measurable goals: (1) demonstrate and calibrate intermediate-band selection of $[\mathrm{Fe/H}]<-1$ RGB stars in crowded, extinguished midplane fields; (2) deliver a reproducible HGE target catalog with documented selection criteria; and (3) determine how selection performance varies with magnitude, extinction, and crowding. The results will establish the scientific return and technical requirements for extending NEWFIRM imaging across a larger fraction of the HGE footprint. Independently of that future expansion, the calibrated images and crowded-field photometric catalog will provide a uniform near-infrared legacy data set for Galactic structure studies.
+
+%The program has three measurable goals: (1) demonstrate and calibrate intermediate-band selection of $[\mathrm{Fe/H}]<-1$ RGB stars in crowded, extinguished midplane fields; (2) deliver a reproducible HGE target catalog with documented selection criteria; and (3) measure the observed density of metal-poor candidates across the surveyed inner-disk sightlines.
+
 
 % Two additional pages may contain references, figures (maximum three), captions.
 \clearpage
@@ -122,18 +145,17 @@ The proposal 60 square degree NEWFIRM observing region is shown by the blue rect
 
 \begin{figure}[!ht]
 \centering
-\fbox{\parbox[c][3.0in][c]{0.92\textwidth}{\centering
-PLACEHOLDER---Recovery performance from synthetic or APOGEE-anchored tests:
-selection completeness and purity versus magnitude, extinction, or uncertainty.}}
-\caption{\textbf{Expected metal-poor target-selection performance.}
-\need{Selection boundary and validation data; completeness, purity, and counts.}}
+\includegraphics[width=\linewidth]{trilegal_colorcolor_isochrones_feh.png}
+\caption{\textbf{Expected metal-poor target-selection performance.} Dereddened color-color diagram of synthetic MW disk population from TRILEGAL and PARSEC isochrones of giant stars.  These indicate that metal-poor RGB stars are well-separated from their metal-rich counterparts including red clump stars.}
 \end{figure}
 
 \begin{references}
-\reference Majewski, S.R. et al. 2011, ApJ, 739, 1, 25
-\reference APOGEE/HGE reference \need{citation}.
-\reference NEWFIRM intermediate-band/NMBS filter reference \need{citation}.
-\reference Inner-Galaxy metal-poor-star motivation \need{citations}.
+\reference Arentsen, A., Starkenburg, E., Martin, N.F., et al. 2020, MNRAS, 496, 4964
+\reference Majewski, S.~R., Zasowski, G., \& Nidever, D.~L.\ 2011, \apj, 739, 1, 25. 
+\reference Rix, H.-W., Chandra, V., Andrae, R., et al. 2022, ApJ, 941, 45
+\reference SDSS Collaboration 2026, ``Hidden Galaxy Explorer,''
+\url{https://www.sdss.org/future/hge/}
+\reference van Dokkum, P.~G., Labb{\'e}, I., Marchesini, D., et al.\ 2009, \pasp, 121, 875, 2.
 \end{references}
 
 \clearpage
@@ -141,9 +163,8 @@ selection completeness and purity versus magnitude, extinction, or uncertainty.}
 \expdesign
 
 \noindent\textbf{Survey design.---}
-We request two May--July nights with Blanco/NEWFIRM to image 60~deg$^2$
-of the nothern Galactic midplane in the $H1$ and $H2$ intermediate bands. The
-footprint contains 306 pointings on a $1600\arcsec$ ($26.7\arcmin$) grid,
+We request two May--July nights with Blanco/NEWFIRM to conduct a 60~deg$^2$ pathfinder survey of the inner Galactic midplane in the $H1$ and $H2$ intermediate bands.
+The footprint contains 306 pointings on a $1600\arcsec$ ($26.7\arcmin$) grid,
 providing about $1\arcmin$ overlap for astrometric and photometric registration.
 At each pointing we will obtain three irregularly offset observations spanning
 approximately $60\arcsec$. The three positions partially fill NEWFIRM's
@@ -187,8 +208,9 @@ such images. We will derive astrometry and crowded-field PSF photometry from
 the sky-subtracted stacks and use tile overlaps to determine relative
 zeropoints. Cross-matches to 2MASS, UKIDSS-GPS, GLIMPSE, unWISE and APOGEE will
 provide broad-band colors, extinction estimates (via the RJCE method), and spectroscopic validation (for brighter stars).
-Artificial-star tests will quantify completeness and color uncertainties. The
-final products will be calibrated images, a merged catalog, and an HGE target
+Repeat measurements within the dither sequence and in tile overlaps will quantify photometric uncertainties and spatial systematics as functions of magnitude and crowding.
+%Artificial-star tests will quantify completeness and color uncertainties.
+The final products will be calibrated images, a merged catalog, and an HGE target
 list with a quantified selection function.
 
 \end{document}
