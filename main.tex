@@ -142,7 +142,7 @@ selection completeness and purity versus magnitude, extinction, or uncertainty.}
 
 \noindent\textbf{Survey design.---}
 We request two May--July nights with Blanco/NEWFIRM to image 60~deg$^2$
-of the southern Galactic midplane in the H1 and H2 intermediate bands. The
+of the nothern Galactic midplane in the $H1$ and $H2$ intermediate bands. The
 footprint contains 306 pointings on a $1600\arcsec$ ($26.7\arcmin$) grid,
 providing about $1\arcmin$ overlap for astrometric and photometric registration.
 At each pointing we will obtain three irregularly offset observations spanning
@@ -153,16 +153,16 @@ rejection of bad pixels, persistence, and other detector artifacts.
 \smallskip
 \noindent\textbf{Depth and exposure times.---}
 Each observation will contain $2\times10$~s internal coadds, giving 60~s per
-filter per pointing. The short coadds keep the H-band background within the
+filter per pointing. The short coadds keep the $H$-band background within the
 detector's linear regime. For $0.9\arcsec$ image quality, the NEWFIRM exposure
 calculator predicts ${\rm S/N}\simeq140$ per band at $H=15.5$, equivalent to
 $\sigma(H1-H2)\simeq0.011$~mag before calibration systematics. This precision
-is sufficient to measure the metallicity-dependent H1$-$H2 displacement in
+is sufficient to measure the metallicity-dependent $H1-H2$ displacement in
 Figure~1.
 
 Pointings will be executed in $3\times3$ blocks using the \texttt{DeepSparse}
-mapping mode. We will observe all nine pointings in H1, change filters once,
-and traverse the grid in reverse in H2. A block covers 1.78~deg$^2$ and is
+mapping mode. We will observe all nine pointings in $H1$, change filters once,
+and traverse the grid in reverse in $H2$. A block covers 1.78~deg$^2$ and is
 estimated to require 29 minutes, including readout, dithers, map motions, and
 one filter change. The 34 blocks require 16.5 hours of scripted execution;
 allowing for acquisition, focus checks, calibrations, and repeated exposures
@@ -185,8 +185,8 @@ bad-pixel correction. For each exposure, a scaled, source-masked sky will be
 constructed from the nine nearest same-filter images; every block supplies 27
 such images. We will derive astrometry and crowded-field PSF photometry from
 the sky-subtracted stacks and use tile overlaps to determine relative
-zeropoints. Cross-matches to 2MASS, VIRAC2, APOGLIMPSE, Gaia, and APOGEE will
-provide broad-band colors, extinction estimates, and spectroscopic validation.
+zeropoints. Cross-matches to 2MASS, UKIDSS-GPS, GLIMPSE, unWISE and APOGEE will
+provide broad-band colors, extinction estimates (via the RJCE method), and spectroscopic validation (for brighter stars).
 Artificial-star tests will quantify completeness and color uncertainties. The
 final products will be calibrated images, a merged catalog, and an HGE target
 list with a quantified selection function.
