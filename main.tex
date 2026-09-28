@@ -12,9 +12,14 @@
 % Red text marks quantitative inputs that must be finalized before submission.
 \newcommand{\need}[1]{\textcolor{red}{[NEED: #1]}}
 
+\newcommand{\dgr}{$^{\circ}~$}
+%\newcommand{\deg}{$^{\circ}$}
+
 \begin{document}
 
 \sciencejustification
+
+{\bf Unveiling the Fossilized relics of the early Milky Way with NEWFIRM}
 
 \noindent\textbf{The hidden metal-poor Milky Way.---}
 The oldest stars preserve a fossil record of the Milky Way's formation, but our
@@ -33,29 +38,27 @@ and bulge.
 \smallskip
 \noindent\textbf{A photometric solution in the near infrared.---}
 We propose an intermediate-band imaging survey of the Milky Way midplane with
-NEWFIRM on the Blanco 4-m telescope. The NEWFIRM \need{final filter list:
-J2/J3/H1/H2 or J1/J2/J3/H1/H2} filters sample cool giants across the $J$ and
-$H$ windows. Synthetic photometry from stellar isochrones demonstrates that
+NEWFIRM on the Blanco 4-m telescope. The NEWFIRM $H1/H2$ filters sample cool giants across the $J$ and $H$ windows. Synthetic photometry from stellar isochrones demonstrates that
 the $H1-H2$ color is sensitive to metallicity along the red-giant branch while
 complementary colors constrain temperature and reddening (Figure~1). The
 observations will test and calibrate a selection designed to identify stars
 with $[\mathrm{Fe/H}]<-1$ where optical metallicity surveys are ineffective.
-At the required precision of \need{$\sigma(H1-H2)$}, our models predict
+At the required precision of $\sigma(H1-H2)$=0.01 mag, our models predict
 \need{completeness} completeness and \need{purity} purity over
 \need{temperature/color and extinction range}.
 
 \smallskip
 \noindent\textbf{Enabling the Hidden Galaxy Explorer.---}
-After-SDSS-V's Hidden Galaxy Explorer (HGE) is being developed to map the
+After-SDSS-V's (AS-5) Hidden Galaxy Explorer (HGE) is being developed to map the
 dust-obscured far side of the Milky Way with deep near-infrared spectroscopy of
 faint luminous giants. HGE can deliver precise velocities and detailed
 abundances for these stars, but its return depends on an efficient and
-well-characterized input catalog. Existing 2MASS, VIRAC2, and APOGLIMPSE
-photometry can identify luminous red giants and estimate extinction; it cannot
+well-characterized input catalog. Existing 2MASS, VIRAC2, UKIDSS-GPS and GLIMPSE
+photometry can identify luminous red giants and estimate extinction via RJCE (Majewski et al.\ 2011); it cannot
 efficiently isolate the rare metal-poor population. NEWFIRM supplies the
 missing metallicity information. Combining the proposed photometry with these
 catalogs will yield \need{number} high-priority candidates to HGE's faint limit
-of \need{$H$-band limit} across \need{survey area and longitude range}. Stars
+of $H$=15.5 across \need{survey area and longitude range}. Stars
 in fields overlapping APOGEE will provide an immediate spectroscopic training
 and validation sample.
 
@@ -64,7 +67,7 @@ and validation sample.
 The program has three measurable goals: (1) demonstrate and calibrate
 intermediate-band selection of $[\mathrm{Fe/H}]<-1$ RGB stars in crowded,
 extinguished midplane fields; (2) deliver a catalog with a quantified selection
-function for HGE targeting; and (3) determine the surface density of metal-poor
+function for HGE Year 1 targeting; and (3) determine the surface density of metal-poor
 giants as a function of Galactic position. The images and catalogs will also
 provide a deep, uniform near-infrared data set for stellar populations and
 Galactic structure in a region poorly served by existing surveys.
@@ -106,11 +109,13 @@ The metallicity sensitivity of $H1-H2$ separates the metal-poor RGB from the met
 \centering
 \includegraphics[width=\linewidth]{hge_fields_2mass_starcounts.png}
 {\centering
-Galactic $(l,b)$ HGE footprint (red circles) over the 2MASS starcounts map and showing the proposed NEWFIRM observing region in blue,
-extinction/source density, the HGE test field at $(l,b)=(340^\circ,+1^\circ)$,
-and available APOGEE validation stars.}
-\caption{\textbf{Proposed survey footprint.} \need{Area, longitude/latitude
-limits, number of NEWFIRM pointings, and rationale for field selection.}}
+Galactic $(l,b)$ HGE footprint (red circles) over the 2MASS starcounts map and showing the proposed NEWFIRM observing region in blue, the HGE test field at $(l,b)=(340^\circ,+1^\circ)$
+(green circle).}
+\caption{\textbf{Proposed survey footprint.} 
+The proposal 60 square degree NEWFIRM observing region is shown by the blue rectangle, $20<l<40$\dgr and $-1.5<b<1.5$\deg.
+%\need{Area, longitude/latitude
+%limits, number of NEWFIRM pointings, and rationale for field selection.}
+}
 \end{figure}
 
 \clearpage
@@ -125,6 +130,7 @@ selection completeness and purity versus magnitude, extinction, or uncertainty.}
 \end{figure}
 
 \begin{references}
+\reference Majewski, S.R. et al. 2011, ApJ, 739, 1, 25
 \reference APOGEE/HGE reference \need{citation}.
 \reference NEWFIRM intermediate-band/NMBS filter reference \need{citation}.
 \reference Inner-Galaxy metal-poor-star motivation \need{citations}.
@@ -135,49 +141,122 @@ selection completeness and purity versus magnitude, extinction, or uncertainty.}
 \expdesign
 
 \noindent\textbf{Survey design.---}
-We request \need{number of nights; dark/gray/bright} with Blanco/NEWFIRM to
-image \need{area} of the southern Galactic midplane in \need{filter list}. The
-footprint comprises \need{number} NEWFIRM tiles spanning \need{$l,b$ limits}.
-It is chosen to \need{state optimization: inner-disk/bar sightlines, HGE fields,
+We request 2-3 nights of bright time with Blanco/NEWFIRM to
+image 60 square degrees of the northern Galactic midplane in $H1$ and $H2$. The
+footprint comprises \need{number} NEWFIRM tiles spanning $20<l<40$\dgr and $-1.5<b<1.5$\deg.
+It is chosen to 
+\need{state optimization: inner-disk/bar sightlines, HGE fields,
 APOGEE validation, and/or extinction range}. Each tile will use a
 \need{number/geometry}-position dither that fills detector gaps, rejects bad
 pixels and cosmic rays, and supports a spatially and temporally local sky frame.
 Small offsets and \need{larger sky offsets, if required in crowded fields} will
 be interleaved to control the variable near-infrared background.
 
-\smallskip
-\noindent\textbf{Depth and exposure times.---}
-Our quantitative requirement is $\sigma(H1-H2)<\need{value}$ at
-$H=\need{HGE target limit}$, corresponding to signal-to-noise
-$>\need{value}$ in each intermediate band. The NEWFIRM exposure-time
-calculator gives individual exposures of \need{DIT and coadds} and total
-integrations of \need{per-filter times} per tile under \need{image quality, sky
-brightness, airmass, and water-vapor assumptions}. Individual integrations
-will avoid saturation and background nonlinearity while providing efficient
-sky sampling. Including \need{readout, dithering, filter changes, acquisition,
-and calibration overhead fraction}, each tile requires \need{elapsed time}; the
-full program requires \need{total hours/nights}.
+%\smallskip
+%\noindent\textbf{Depth and exposure times.---}
+%Our quantitative requirement is $\sigma(H1-H2)$=0.01 mag at
+%$H=15.5$, corresponding to signal-to-noise = 150 in each intermediate band. The NEWFIRM exposure-time
+%calculator gives individual exposures of \need{DIT and coadds} and total
+%integrations of \need{per-filter times} per tile under \need{image quality, sky
+%brightness, airmass, and water-vapor assumptions}. Individual integrations
+%will avoid saturation and background nonlinearity while providing efficient
+%sky sampling. Including \need{readout, dithering, filter changes, acquisition,
+%and calibration overhead fraction}, each tile requires \need{elapsed time}; the
+%full program requires \need{total hours/nights}.
 
-\smallskip
-\noindent\textbf{Conditions and scheduling.---}
-We require \need{requested image quality} image quality to limit blending in
-the dense midplane and photometric conditions for stable colors. The program
-can otherwise be executed in \need{lunar phase} time and has no cadence or
-time-critical constraints. The fields are observable during \need{date/LST
-range}; distributing them across the semester does not compromise the science.
+%\smallskip
+%\noindent\textbf{Conditions and scheduling.---}
+%We require \need{requested image quality} image quality to limit blending in
+%the dense midplane and photometric conditions for stable colors. The program
+%can otherwise be executed in bright time and has no cadence or
+%time-critical constraints. The fields are observable during late May till the end of the 2027A %semester; distributing them across the semester does not compromise the science.
 
-\smallskip
-\noindent\textbf{Reduction, calibration, and validation.---}
-Processing will remove detector signatures, construct sky frames from the
-dithers, correct astrometry, and produce stacked images and PSF photometry for
-crowded fields. Astrometry and broad-band zeropoints will be tied to
-\need{2MASS/VIRAC2}; intermediate-band zeropoints and spatial color terms will
-be determined from repeat observations and stellar-locus constraints
-\need{plus standards, if applicable}. Cross-matching to 2MASS, VIRAC2,
-APOGLIMPSE, Gaia, and APOGEE will provide extinction estimates, giant selection,
-and spectroscopic validation. Artificial-star tests will quantify completeness.
-The products will be calibrated images, a merged multi-band catalog, and an
-HGE-ready target list with selection probabilities as functions of magnitude,
-color, crowding, and position.
+%\smallskip
+%\noindent\textbf{Reduction, calibration, and validation.---}
+%Processing will remove detector signatures, construct sky frames from the
+%dithers, correct astrometry, and produce stacked images and PSF photometry for
+%crowded fields. Astrometry and broad-band zeropoints will be tied to 2MASS; intermediate-band 5zeropoints and spatial color terms will
+%be determined from repeat observations and stellar-locus constraints
+%\need{plus standards, if applicable}. Cross-matching to 2MASS, UKIDSS-GPS, and GLIMPSE
+%will provide extinction estimates via the RJCE method, giant selection,
+%and spectroscopic validation. Artificial-star tests will quantify completeness.
+%The products will be calibrated images, a merged multi-band catalog, and an
+%HGE-ready target list with selection probabilities as functions of magnitude,
+%color, crowding, and position.
+
+\subsection*{Observing Strategy and Time Request}
+
+The survey will use only the NEWFIRM $H1$ and $H2$ intermediate-band filters. 
+The metallicity-sensitive $H1-H2$ color requires high-precision photometry 
+for red giants near the HGE targeting limit.  The NEWFIRM exposure-time 
+calculator predicts that, in $0.9\arcsec$ seeing, a star with $H=15.5$ 
+reaches ${\rm S/N}\simeq140$ in each band with 60~s of total integration. 
+This precision is sufficient to separate the metal-poor locus in $H1-H2$ 
+when combined with existing broad-band near-infrared photometry.
+
+At each map position (``tile''), we will obtain three dithered observations per filter, 
+with each observation comprising $2\times10$~s internal coadds.  The 10~s 
+coadd time keeps the $H$-band sky well within the detector's linear regime, 
+while the 20~s observation time limits readout overhead.  The three 
+positions therefore provide a total integration of $3\times2\times10~{\rm s}=60~{\rm s}$
+per filter.  Three detector positions are the minimum that provide robust 
+outlier rejection: if one measurement is affected by a bad pixel, 
+persistence, or another detector artifact, the remaining two measurements 
+can identify and reject it.  Relative to a two-position strategy with the 
+same total integration, the third position requires only one additional 
+small telescope offset.  The dithers will span approximately $60\arcsec$ 
+with irregular offsets in both coordinates, moving sources across 
+independent detector pixels and partially filling the approximately 
+$35\arcsec$ gaps between the four arrays.
+
+The survey will be executed with the NEWFIRM \texttt{DeepSparse} mapping 
+strategy.  Adjacent map centers will be separated by approximately 
+$1600\arcsec$ ($26.7\arcmin$), retaining roughly $1\arcmin$ of overlap for 
+astrometric and photometric registration.  This spacing supplies
+approximately 0.20~deg$^2$ of new area per map position.  The map will be 
+divided into $3\times3$ blocks.  All nine positions in a block will first 
+be observed in $H1$, followed by a single filter change and a reverse traversal 
+of the same grid in $H2$.  This strategy amortizes the filter-wheel motion, 
+which can require up to approximately 60~s, over nine map positions while 
+keeping the two-filter observations within approximately 25~minutes.
+
+Near-infrared sky subtraction will use the temporally nearest survey 
+exposures in the same filter.  The NEWFIRM reduction software selects up to nine images with identical exposure parameters, scales 
+each image to the instantaneous background of the science exposure, and 
+constructs a sigma-clipped median sky image.  Each $3\times3$ block supplies 
+27 exposures per filter, ensuring that nine nearby frames are available for 
+every science image.  The large map offsets cause stars in neighboring 
+pointings to fall at unrelated detector positions, improving their rejection 
+from the sky model.  We will additionally apply expanded source masks before 
+forming the sky images and fit a local residual background during PSF 
+photometry.  Occasional observations of lower-density fields will be used 
+to validate the sky subtraction and can provide independent sky frames if 
+required in the most crowded or nebulous regions.
+
+A nine-position block contains 18~minutes of on-source integration in $H1$ 
+and $H2$.  Including detector readout, small dithers, sixteen inter-tile map 
+motions, and one filter change, we estimate approximately 29~minutes per 
+block.  At 0.20~deg$^2$ per tile, each block covers approximately 
+1.8~deg$^2$, corresponding to a survey rate of approximately
+3.7~deg$^2$~hr$^{-1}$ in both filters.  Covering 60~deg$^2$ requires 
+34 blocks, or approximately 16.5~hr of scripted execution.  Allowing for 
+initial acquisition, focus checks, calibration observations, block-edge 
+inefficiencies, and occasional repeated exposures gives a total requirement 
+of approximately 20~hr.  The requested two May--July nights provide 
+approximately 21--22~hr of astronomical darkness at CTIO and are sufficient 
+to complete the survey.
+
+\subsection*{Observing Conditions}
+
+The program does not require dark time.  Gray or bright time is acceptable 
+because the observations are sky-background limited and use intermediate-band 
+$H$ filters, although fields should remain at least $30^\circ$ from the Moon. 
+Photometric or mostly clear conditions are preferred for accurate $H1-H2$ 
+colors.  Overlapping map positions and the dense stellar population will 
+provide strong relative photometric calibration across the survey.  We 
+request delivered image quality of $\lesssim1.2\arcsec$, with 
+$\lesssim1.0\arcsec$ preferred to limit crowding and maximize point-source 
+sensitivity.  The short observations will be obtained without guiding, as 
+recommended for efficient NEWFIRM broadband and intermediate-band imaging.
 
 \end{document}
